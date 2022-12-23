@@ -15,6 +15,7 @@ $(document).ready(function(){
     var t=$('<title></title>').text(title+" | TeeFunWeb");
     $("head").append(t);
 
+    /*
     setTimeout(function(){
         while(1){
            try{
@@ -23,5 +24,6 @@ $(document).ready(function(){
             }catch{} 
         } 
     });
-    
+    */
+   
 });
