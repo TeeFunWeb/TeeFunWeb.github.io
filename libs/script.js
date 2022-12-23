@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $.ajax({
-        url:"http://teefunweb.github.io/libs/cdn.html",
+        url:"https://teefunweb.github.io/libs/cdn.html",
         success:function(result){
             $("head").append(result);
         }
     });
     $.ajax({
-        url:"http://teefunweb.github.io/libs/nav.html",
+        url:"https://teefunweb.github.io/libs/nav.html",
         success:function(result){
             $("body").prepend(result);
         }
