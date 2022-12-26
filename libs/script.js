@@ -11,19 +11,13 @@ $(document).ready(function(){
             $("body").prepend(result);
         }
     });
+    $.ajax({
+        url:"https://teefunweb.github.io/libs/end.html",
+        success:function(result){
+            $("body").append(result);
+        }
+    });
 
     var t=$('<title></title>').text(title+" | TeeFunWeb");
     $("head").append(t);
-
-    /*
-    setTimeout(function(){
-        while(1){
-           try{
-                $(document).foundation();
-                break;
-            }catch{} 
-        } 
-    });
-    */
-   
 });
