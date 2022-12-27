@@ -2,6 +2,8 @@ $(document).ready(function(){
     $.ajax({
         url:"https://teefunweb.github.io/libs/cdn.html",
         success:function(result){
+            result=$(result);
+            result.find('#libcss').attr("href",function(i,o){return root+o;});
             $("head").append(result);
         }
     });
