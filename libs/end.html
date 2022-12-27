@@ -1,10 +1,16 @@
-<div class="panel">
-    <p>teefunweb<br />
-    Powered by foundation</p>
+<div class="panel" id="end">
+  <p>Made by team "TeeFunWeb"
+	<br />
+  Powered by Foundation</p>
 
-    <script>
-        $(document).ready(function(){
-            $(document).foundation();
-        });
-    </script>
+  <script>
+    function TryRunFound(){
+      try{
+        $(document).foundation();
+      } catch {
+        setTimeout(TryRunFound,1000);
+      }
+    }
+    setTimeout(TryRunFound,1000);
+  </script>
 </div>
